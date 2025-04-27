@@ -16811,10 +16811,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#60B5FF),
+    to(#27548A)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #60B5FF 0%, #27548A 100%);
   z-index: 1;
   overflow: hidden;
   display: -webkit-inline-box;
@@ -16835,10 +16835,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#ff9900),
-    to(#f3722e)
+    from(#AFDDFF),
+    to(#3D90D7)
   );
-  background: linear-gradient(90deg, #ff9900 0%, #f3722e 100%);
+  background: linear-gradient(90deg, #AFDDFF 0%, #3D90D7 100%);
   -webkit-transform: translateY(0px) rotate(0deg);
   transform: translateY(0px) rotate(0deg);
   opacity: 0;
