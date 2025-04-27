@@ -17201,10 +17201,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#213448),
+    to(#547792)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #213448 0%, #547792 100%);
   -webkit-transform: scale(0.985);
   transform: scale(0.985);
   -webkit-transition: all 0.5s ease;
