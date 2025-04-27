@@ -17201,10 +17201,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#213448),
+    to(#547792)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #213448 0%, #547792 100%);
   -webkit-transform: scale(0.985);
   transform: scale(0.985);
   -webkit-transition: all 0.5s ease;
@@ -17282,7 +17282,7 @@ textarea {
   content: "";
   width: 100%;
   height: 100%;
-  background: #301514;
+  background: #547792;
   top: 0;
   left: 0;
   opacity: 0.9;
@@ -17524,10 +17524,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#3D90D7),
+    to(#3D90D7)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #3D90D7 0%, #3D90D7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -17540,10 +17540,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#3D90D7),
+    to(#3D90D7)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #3D90D7 0%, #3D90D7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
