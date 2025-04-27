@@ -16033,10 +16033,10 @@ textarea {
     linear,
     left top,
     right top,
-    from(#f3722e),
-    to(#ff9900)
+    from(#3D90D7),
+    to(#3D90D7)
   );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: linear-gradient(90deg, #3D90D7 0%, #3D90D7 100%);
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
