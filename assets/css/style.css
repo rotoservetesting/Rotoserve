@@ -16935,6 +16935,13 @@ textarea {
   margin-top: 80px;
 }
 
+/* Remove margin-top for mobile devices to eliminate gap between mobile header and hero */
+@media (max-width: 991px) {
+  .hero-bg {
+    margin-top: 0;
+  }
+}
+
 .hero-bg::after {
   content: '';
   position: absolute;
