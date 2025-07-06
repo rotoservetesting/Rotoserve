@@ -98,7 +98,10 @@
             el: '.swiper-pagination',
             clickable: true,
         },
-       
+        navigation: {
+            nextEl: '.hero-slider-nav-btn-next',
+            prevEl: '.hero-slider-nav-btn-prev',
+        },
     });
 
 

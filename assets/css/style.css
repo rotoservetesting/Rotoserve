@@ -16943,6 +16943,18 @@ textarea {
   width: 100%;
   height: 580px;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 @media (min-width: 576px) {
   .hero-bg {
@@ -16994,6 +17006,7 @@ textarea {
   -webkit-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   color: #fff;
+  z-index: 2;
 }
 @media (min-width: 992px) {
   .hero-slider-single-item .content-box {
@@ -17197,14 +17210,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#213448),
-    to(#547792)
-  );
-  background: linear-gradient(90deg, #213448 0%, #547792 100%);
+  background: #27548A;
   -webkit-transform: scale(0.985);
   transform: scale(0.985);
   -webkit-transition: all 0.5s ease;
@@ -17282,7 +17288,7 @@ textarea {
   content: "";
   width: 100%;
   height: 100%;
-  background: #547792;
+  background: #27548A;
   top: 0;
   left: 0;
   opacity: 0.9;
@@ -17439,9 +17445,9 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   padding: 40px 40px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -17450,6 +17456,7 @@ textarea {
   margin-right: 0px;
   margin-bottom: 40px;
   text-align: center;
+  min-height: 200px;
 }
 .service-single-item:nth-child(even) {
   margin-right: 0px;
@@ -17494,6 +17501,15 @@ textarea {
     margin-right: 50px;
   }
 }
+.service-single-item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+
 .service-single-item .content .title {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
@@ -17504,6 +17520,7 @@ textarea {
   color: #301514;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-align: center;
 }
 .service-single-item .content .btn {
   position: relative;
@@ -18549,6 +18566,18 @@ textarea {
 .breadcrumb-wrapper .image {
   width: 100%;
   height: 350px;
+  position: relative;
+}
+
+.breadcrumb-wrapper .image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .breadcrumb-wrapper .image {
@@ -18571,6 +18600,7 @@ textarea {
   top: calc(50% + 70px);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 2;
 }
 .breadcrumb-wrapper .content .title {
   font-size: 50px;
@@ -19678,14 +19708,7 @@ Components - Sidebar Widget
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#f3722e),
-    to(#ff9900)
-  );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: #27548A;
   -webkit-transform: scale(0.985);
   transform: scale(0.985);
   -webkit-transition: all 0.5s ease;
@@ -19726,14 +19749,7 @@ Components - Sidebar Widget
   color: #301514;
 }
 .contact-info-single-item:hover::after {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#f3722e),
-    to(#ff9900)
-  );
-  background: linear-gradient(90deg, #f3722e 0%, #ff9900 100%);
+  background: #27548A;
   -webkit-transform: scale(1);
   transform: scale(1);
   visibility: visible;
@@ -20011,6 +20027,32 @@ Components - Sidebar Widget
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+/* Override Bootstrap grid to push navigation to the right */
+.header-bottom .row {
+  justify-content: flex-start !important;
+}
+
+.header-bottom .col-auto:nth-child(2) {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/* Service description styling */
+.service-description {
+  color: #6c757d;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Service section spacing */
+.service-section-spacing {
+  margin-bottom: 80px;
 }
 .header-bottom .header-nav > li > a {
   padding-right: 20px;
@@ -20142,11 +20184,11 @@ Components - Sidebar Widget
 * Layout - Footer
 *****************************/
 .footer-bg {
-  background-color: #301514;
+  background-color: #27548A;
   position: relative;
   z-index: 11;
 }
-.footer-bg::after {
+/* .footer-bg::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -20157,12 +20199,12 @@ Components - Sidebar Widget
   background-repeat: no-repeat;
   background-position: center bottom;
   z-index: -1;
-}
-@media (min-width: 768px) {
+} */
+/* @media (min-width: 768px) {
   .footer-bg::after {
     bottom: calc(0% + 54px);
   }
-}
+} */
 
 .footer-top {
   position: relative;
@@ -20471,13 +20513,13 @@ Components - Sidebar Widget
 }
 
 .footer-bottom {
-  background: #25100f;
+  background: #ffffff;
   padding-top: 21px;
   padding-bottom: 21px;
 }
 
 .footer-copyright {
-  color: #fff;
+  color: #333333;
 }
 .footer-copyright a,
 .footer-copyright i {
@@ -20502,7 +20544,7 @@ Components - Sidebar Widget
   content: "|";
   position: absolute;
   display: block;
-  color: #fff;
+  color: #333333;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -20515,7 +20557,7 @@ Components - Sidebar Widget
   display: none;
 }
 .footer-soacial a {
-  color: #fff;
+  color: #333333;
   text-transform: capitalize;
 }
 .footer-soacial a:hover {
@@ -20941,3 +20983,4 @@ Components - Sidebar Widget
 .no-csspointerevents .nice-select.open .list {
   display: block;
 }
+
