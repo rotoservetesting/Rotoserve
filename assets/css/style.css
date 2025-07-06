@@ -666,7 +666,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -3174,10 +3174,6 @@ textarea.form-control-lg {
 }
 .form-floating > .form-control::-webkit-input-placeholder,
 .form-floating > .form-control-plaintext::-webkit-input-placeholder {
-  color: transparent;
-}
-.form-floating > .form-control::-moz-placeholder,
-.form-floating > .form-control-plaintext::-moz-placeholder {
   color: transparent;
 }
 .form-floating > .form-control:-ms-input-placeholder,
@@ -12410,10 +12406,6 @@ fieldset:disabled .btn {
     padding-right: 10px !important;
     padding-left: 10px !important;
   }
-  .px-md-3 {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
   .px-md-4 {
     padding-right: 20px !important;
     padding-left: 20px !important;
@@ -14511,10 +14503,6 @@ fieldset:disabled .btn {
   .px-xl-2 {
     padding-right: 10px !important;
     padding-left: 10px !important;
-  }
-  .px-xl-3 {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
   }
   .px-xl-4 {
     padding-right: 20px !important;
@@ -16944,6 +16932,7 @@ textarea {
   height: 580px;
   overflow: hidden;
   position: relative;
+  margin-top: 80px;
 }
 
 .hero-bg::after {
@@ -20571,13 +20560,24 @@ Components - Sidebar Widget
 * Layout - Header
 *****************************/
 .mobile-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
-  background: rgba(48, 21, 20, 0.05);
-  padding: 20px 0;
+  z-index: 999;
+  background: rgba(48, 21, 20, 0.95);
+  padding: 15px 0;
+  backdrop-filter: blur(10px);
+}
+
+.mobile-logo {
+  max-width: 150px;
+}
+
+.mobile-logo img {
+  width: 100%;
+  height: auto;
+  max-height: 40px;
 }
 
 .mobile-action-link {
@@ -20606,6 +20606,7 @@ Components - Sidebar Widget
   background: #301514;
   width: 300px;
   overflow-x: hidden;
+  visibility: hidden;
 }
 @media (min-width: 576px) {
   .offcanvas {
@@ -20628,6 +20629,7 @@ Components - Sidebar Widget
 .offcanvas.offcanvas-open {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  visibility: visible;
 }
 
 .offcanvas-overlay {
@@ -20655,6 +20657,9 @@ Components - Sidebar Widget
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
 }
 
 .offcanvas-title {
@@ -20671,7 +20676,8 @@ Components - Sidebar Widget
 
 .offcanvas-menu li {
   position: relative;
-  padding: 7px 5px;
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .offcanvas-menu > ul > li {
@@ -20687,6 +20693,9 @@ Components - Sidebar Widget
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .offcanvas-menu li a:hover {
