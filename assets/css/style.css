@@ -20565,9 +20565,9 @@ Components - Sidebar Widget
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(48, 21, 20, 0.95);
+  background: #ffffff;
   padding: 15px 0;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-logo {
@@ -20578,13 +20578,57 @@ Components - Sidebar Widget
   width: 100%;
   height: auto;
   max-height: 40px;
+  filter: brightness(0) saturate(100%);
 }
 
 .mobile-action-link {
   font-size: 24px;
 }
 .mobile-action-link a {
-  color: #fff;
+  color: #301514;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mobile-action-link a .menu-text {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.mobile-action-link a:hover {
+  background: #e9ecef;
+  color: #301514;
+}
+
+/* Fallback for menu icon if IcoFont fails to load */
+.mobile-action-link a i {
+  font-size: 18px;
+}
+
+.mobile-action-link a i:before {
+  content: "☰";
+  font-family: Arial, sans-serif;
+  font-style: normal;
+}
+
+/* Hide menu text on very small screens */
+@media (max-width: 480px) {
+  .mobile-action-link a .menu-text {
+    display: none;
+  }
+  
+  .mobile-action-link a {
+    padding: 10px;
+    min-width: 40px;
+  }
 }
 
 /*****************************
@@ -20689,13 +20733,27 @@ Components - Sidebar Widget
 }
 
 .offcanvas-menu li a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 16px;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.offcanvas-menu li a i {
+  margin-right: 15px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.offcanvas-menu li a:hover {
+  color: #ff6b35;
+  padding-left: 10px;
 }
 
 .offcanvas-menu li a:hover {
@@ -20749,12 +20807,71 @@ Components - Sidebar Widget
 }
 
 .mobile-contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-info-section,
+.social-links-section {
+  margin-bottom: 30px;
+}
+
+.contact-info-section h4,
+.social-links-section h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-item {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-item i {
+  margin-right: 15px;
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+  color: #ff6b35;
+}
+
+.contact-item span {
+  font-size: 14px;
+}
+
+.social-links-section .social-link {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.social-links-section .social-link li {
+  border: none;
+  padding: 0;
+}
+
+.social-links-section .social-link a {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-links-section .social-link a:hover {
+  background: #ff6b35;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /**
