@@ -24,19 +24,19 @@
         &.swiper-slide-active{
             .hero-content{
                 .sup-title{
-                   animation: fadeInDown 1.5s ease .8s 1 backwards;
+                   animation: fadeInDown 1.5s ease .2s 1 backwards;
                 }
         
                 .title{
-                    animation: fadeInDown 1.2s ease 1.8s 1 backwards;
+                    animation: fadeInDown 1.2s ease .4s 1 backwards;
                 }
         
                 .sub-title{
-                    animation: fadeInDown 1.2s ease 2.5s 1 backwards;
+                    animation: fadeInDown 1.2s ease .6s 1 backwards;
                 }
         
                 .btn{
-                    animation: zoomIn .8s ease 3s 1 backwards;
+                    animation: zoomIn .8s ease .8s 1 backwards;
                 }
             }
             
