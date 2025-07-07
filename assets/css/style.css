@@ -12406,10 +12406,6 @@ fieldset:disabled .btn {
     padding-right: 10px !important;
     padding-left: 10px !important;
   }
-  .px-md-4 {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
   .px-md-5 {
     padding-right: 25px !important;
     padding-left: 25px !important;
@@ -13174,9 +13170,6 @@ fieldset:disabled .btn {
   }
   .ms-lg-10 {
     margin-left: 50px !important;
-  }
-  .ms-lg-auto {
-    margin-left: auto !important;
   }
   .m-lg-n1 {
     margin: -5px !important;
@@ -14503,10 +14496,6 @@ fieldset:disabled .btn {
   .px-xl-2 {
     padding-right: 10px !important;
     padding-left: 10px !important;
-  }
-  .px-xl-4 {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
   }
   .px-xl-5 {
     padding-right: 25px !important;
@@ -16032,29 +16021,29 @@ textarea {
   .hero-slider-single-item.swiper-slide-active
   .hero-content
   .sup-title {
-  -webkit-animation: fadeInDown 1.5s ease 0.8s 1 backwards;
-  animation: fadeInDown 1.5s ease 0.8s 1 backwards;
+  -webkit-animation: fadeInDown 1.5s ease 0.2s 1 backwards;
+  animation: fadeInDown 1.5s ease 0.2s 1 backwards;
 }
 .hero-slider-active
   .hero-slider-single-item.swiper-slide-active
   .hero-content
   .title {
-  -webkit-animation: fadeInDown 1.2s ease 1.8s 1 backwards;
-  animation: fadeInDown 1.2s ease 1.8s 1 backwards;
+  -webkit-animation: fadeInDown 1.2s ease 0.4s 1 backwards;
+  animation: fadeInDown 1.2s ease 0.4s 1 backwards;
 }
 .hero-slider-active
   .hero-slider-single-item.swiper-slide-active
   .hero-content
   .sub-title {
-  -webkit-animation: fadeInDown 1.2s ease 2.5s 1 backwards;
-  animation: fadeInDown 1.2s ease 2.5s 1 backwards;
+  -webkit-animation: fadeInDown 1.2s ease 0.6s 1 backwards;
+  animation: fadeInDown 1.2s ease 0.6s 1 backwards;
 }
 .hero-slider-active
   .hero-slider-single-item.swiper-slide-active
   .hero-content
   .btn {
-  -webkit-animation: zoomIn 0.8s ease 3s 1 backwards;
-  animation: zoomIn 0.8s ease 3s 1 backwards;
+  -webkit-animation: zoomIn 0.8s ease 0.8s 1 backwards;
+  animation: zoomIn 0.8s ease 0.8s 1 backwards;
 }
 
 /*Default Navigation Style*/
@@ -16929,7 +16918,7 @@ textarea {
 *****************************/
 .hero-bg {
   width: 100%;
-  height: 580px;
+  height: 500px;
   overflow: hidden;
   position: relative;
   margin-top: 80px;
@@ -16954,12 +16943,12 @@ textarea {
 }
 @media (min-width: 576px) {
   .hero-bg {
-    height: 650px;
+    height: 550px;
   }
 }
 @media (min-width: 992px) {
   .hero-bg {
-    height: 700px;
+    height: 600px;
   }
 }
 @media (min-width: 1200px) {
@@ -16969,7 +16958,7 @@ textarea {
 }
 @media (min-width: 1400px) {
   .hero-bg {
-    height: 1100px;
+    height: 900px;
   }
 }
 .hero-bg img {
@@ -20013,7 +20002,7 @@ Components - Sidebar Widget
   /*Header Social Link*/
 }
 .header-bottom .logo {
-  width: 190px;
+  width: 230px;
   overflow: hidden;
 }
 .header-bottom .logo img {
